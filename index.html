@@ -4,27 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/Proyecto90s/src/styles/styles.css" />
+    <link rel="stylesheet" href="/Proyecto90s/src/styles/styles-home.css">
   </head>
   <body>
-    <header>
-      <div class="logo_header">
-        <img src="/src/img/coche.png" alt="logo_vehículo" />
-        <h2>Carros90s</h2>
+    <div class="wrapper">
+      <header>
+        <div class="logo_header">
+          <img src="/Proyecto90s/src/img/coche.png" alt="logo_vehículo" />
+          <h2>Carros90s</h2>
+        </div>
+
+        <nav id="navegacion">
+          <ul>
+            <span> <a href="/Proyecto90s/index.html">Inicio</a> |</span>
+            <span> <a href="#galeria">Galería</a> |</span>
+            <span
+              ><a href="/Proyecto90s/src/pestañas/mas_vendidos.html">Carros más vendidos</a> |</span
+            >
+            <span><a href="#contáctanos">Contáctanos</a></span>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="contenedor-home">
+        <div class="titulo-home">
+          <h1>Clásicos de los 90: Los Autos que Marcaron una Década</h1>
+          <p>Explora los autos más vendidos de los 90 y revive con nosotros la dorada era del automóvil.</p>
+        </div>
+
+        <div class="contenedor-imagen">
+          <div class="card-imagen">
+            <img src="https://canalcarro.net.br/wp-content/uploads/2024/02/Chevrolet-Monza-Tubarao.webp" alt="imagen de un carro Chevrolet Monza (Sudamérica)">
+            <div>
+              <h3 class="texto-imagen">Chevrolet Monza (Sudamérica)</h3>
+              <p class="texto-imagen">El Chevrolet Monza (Sudamérica) fue un automóvil muy popular en Colombia durante los años 80 y 90. </p>
+            </div>
+          </div>
+
+          <div class="card-imagen">
+            <img src="https://www.planetcarsz.com/img/noticias/galeria/2022/04/renault-r19-06-20220430172507-1920x1080.jpg" alt="imagen de un carro renault 19">
+            <div>
+              <h3 class="texto-imagen"> Renault 19</h3>
+              <p class="texto-imagen">El Renault 19 fue uno de los carros más recordados y apreciados en Colombia durante los años 90 gracias a su diseño moderno.</p>
+            </div>
+          </div>
+
+          <div class="card-imagen">
+            <img src="https://s1.cdn.autoevolution.com/images/gallery/RENAULT-9-2034_9.jpg" alt="imagen de un carro renault 9">
+            <div>
+              <h3 class="texto-imagen">Renault 9</h3>
+              <p class="texto-imagen">El Renault 9 fue uno de los vehículos más destacados de los años 90 en Colombia</p>
+            </div>
+          </div>
+
+        </div>
       </div>
 
-      <nav id="navegacion">
-        <ul>
-          <span> <a href="#inicio">Inicio</a> |</span>
-          <span> <a href="#galeria">Galería</a> |</span>
-          <span
-            ><a href="/src/mas_vendidos.html">Carros más vendidos</a> |</span
-          >
-          <span><a href="#contáctanos">Contáctanos</a></span>
-        </ul>
-      </nav>
-    </header>
-
-    <footer>© 2025 Carros90s - All Rights Reserved</footer>
+      <footer>© 2025 Carros90s - All Rights Reserved</footer>
+    </div>
   </body>
 </html>
