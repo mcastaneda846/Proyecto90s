@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<link rel="stylesheet" href="/Proyecto90s/src/styles/styles.css" />
+<link rel="stylesheet" href="/Proyecto90s/src/styles/styles-home.css">
+<link rel="stylesheet" href="/Proyecto90s/src/styles/styles-contacto.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo_header">
+                <img src="/Proyecto90s/src/img/coche.png" alt="logo_vehículo" />
+                <h2>Carros90s</h2>
+            </div>
+
+            <nav id="navegacion">
+                <ul>
+                <span> <a href="/Proyecto90s/index.html">Inicio</a> |</span>
+                <span> <a href="/Proyecto90s/src/pestañas/galeria.html">Galería</a> |</span>
+                <span
+                    ><a href="/Proyecto90s/src/pestañas/mas_vendidos.html">Carros más vendidos</a> |</span
+                >
+                <span><a href="/Proyecto90s/src/pestañas/contacto.html">Contáctanos</a></span>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="contacto">
+            <form class="form">
+            <label for="name">Nombre</label>
+                <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Nombre"
+                required
+                />
+            <label for="email">Correo electrónico</label>
+            <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="ejemplo@gmail.com"
+                required
+            />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea
+                name="mensaje"
+                placeholder="Ingrese su mensaje aquí..."
+                required
+            ></textarea>
+
+            <input type="submit" />
+            </form>
+        </section>
+        
+    </div>
+    <footer>© 2025 Carros90s - All Rights Reserved</footer>
+</body>
