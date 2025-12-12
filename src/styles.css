@@ -1,10 +1,11 @@
 body {
+  font-family: "Times New Roman", cursive;
   background-color: #fbf5dd;
+  color: #16404d;
 }
 
 header {
   background-color: #dda853;
-  color: #16404d;
   display: flex;
   justify-content: space-between;
   height: 70px;
@@ -41,4 +42,49 @@ footer {
   justify-content: center;
   align-items: center;
   height: 70px;
+}
+
+/*-----------CSS PAGINA mas_vendidos.html---------*/
+
+#carros_mas_vendidos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.cards-carros {
+  display: flex; /* Imagen izquierda, texto derecha */
+  align-items: center;
+  gap: 20px;
+  background-color: whitesmoke;
+  padding: 20px;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  max-width: 90%;
+  transition: transform 0.2s;
+}
+.cards-carros:hover {
+  transform: scale(1.03);
+  border-color: black;
+}
+
+.cards-carros img {
+  width: 170px; /* Tamaño fijo NO rompe el grid */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info-carro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  #carros_mas_vendidos {
+    grid-template-columns: 1fr;
+  }
 }
